@@ -1,0 +1,228 @@
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media all and (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    
+    .advertise {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .header .container.mobile {
+        height: 100%;
+    }
+
+    .logo {
+        float: none;
+        margin: -10px 0px 0px 0px;
+    }
+    .header .menu-icon {
+        font-size: 30px;
+        float: right;
+        height: 100%;   
+    }
+    .menu {
+        float: none;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        z-index: 100;
+        top: 79px;
+        left: 0;
+        background: #000000;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease-in-out;
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: block;
+        text-align: center;
+        font-size: 17px;
+        padding: 10px;
+        border-top: 1px solid white;
+    }
+
+    .menu ul li a {
+        color: white
+    }
+    .menu.open {
+        height: 211px;
+    }
+
+    .user-opt {
+        display: inline-block;
+        padding: 14px 50px;
+        margin: -12px 0px;
+    }
+
+    .user-opt.s-in {
+        background: rgba(251, 157, 156, 0.36);
+    }
+
+    .user-opt.s-up {
+        background: rgb(251, 157, 156);
+    }
+
+    /* Silder CSS */
+
+    .slider {
+        margin: 0 -15px;
+    }
+
+    span.glyphicon.glyphicon-chevron-right, 
+    span.glyphicon.glyphicon-chevron-left {
+        color: yellow;
+        font-size: 25px;
+    }
+
+    /* Grid  CSS*/
+
+    .uk-child-width {
+        width: 25%;
+    }
+
+    /* Footer CSS */
+
+    .footer {
+        padding-top: 20px;
+    }
+    
+    .footer-content {
+        padding: 0px;
+    }
+
+    .footer .footer-list {
+        display: none;
+    }
+    
+    .footer .intro {
+        display: none;
+    }
+
+    .footer .contact {
+        float:none;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    /* Detail Page CSS */
+
+    .box-content-info .info {
+        width: auto;
+    }
+
+    .box-content-info .comment {
+        width: auto;
+        float: left;
+        padding-top: 10px;
+    }
+    
+    /* Favorite Film CSS */
+
+    .fc.fl-left,
+    .fc.fl-right {
+        float: none;
+    }
+
+    .fc.fl-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fc.fl-right {
+        width: 100%;
+    }
+
+    .favfilm h1 {
+        font-size: 18px;
+    }
+
+    .favfilm h2 {
+        font-size: 16px;
+    }
+
+    .favfilm .poster {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .search-box {
+        width: 20%;
+    }
+
+    .box-content-info .info {
+        width: 100%;
+        float: none;
+    }
+
+    .comment {
+        float: none;
+        width: 100%;
+    }
+
+    .footer-list {
+        padding: 0px 70px 0px 0px;
+    }
+
+    .footer .contact {
+        float: left;
+        margin-top: 0px;
+        margin-right: 60px;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .footer-list {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .search-box {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .uk-child-width {
+        width: 35%;
+    }
+
+    .footer .logo {
+        width: 50%;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+}

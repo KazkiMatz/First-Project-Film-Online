@@ -1,0 +1,630 @@
+body {
+    margin: 0;
+    background-color: #1a1917;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header {
+    background-color: #9abbb8;
+}
+
+.container {
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    margin: 0px;
+    width: 220px;
+}
+
+.menu {
+    float: left;
+    list-style: none;
+    margin: 0px 20px;
+    padding: 0px;
+}
+
+.menu > li:hover {
+    background: #ff9900;
+    border-radius: 10px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    text-decoration: none;
+    color: yellow;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: block; 
+}
+
+.menu > li {
+    display: inline-block;
+    margin: 0px;
+    padding: 36px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .child {
+    width: 580px;
+    list-style: none;
+    padding: 7px 15px;
+    margin: 0px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    display: none;
+    z-index: 1
+}
+
+.menu .cate {
+    float: left;
+    margin: 0px;
+    padding: 0px 25px 0px 0px;
+    display: block;
+}
+
+.menu .cate a {
+    display: block;
+    font-size: 13px;
+}
+
+.menu > li:hover .child {
+    display: block;
+}
+
+.child-2 {
+    width: 580px;
+    list-style: none;
+    padding: 0px 0px 0px 40px;
+    margin: 0px;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    display: none;
+}
+
+.child-2 a,
+.menu .child a {
+    color: white;
+}
+
+.child-2 a:hover,
+.menu .child a:hover {
+    color: yellow;
+}
+
+.parent:hover .child-2 {
+    display: block;
+}
+
+
+.notify {
+    margin: 39px 0px;
+    cursor: pointer;
+}
+
+/* CSS Search Box */
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.search-box {
+    width: 32%;
+    display: inline-block;
+    margin: 0px -145px -13px 30px;
+}
+
+/* CSS login */
+.login {
+    border: none;
+    background: none;
+    position: relative;
+    float: right;
+    padding: 19px 15px 17px 15px;
+    margin: 0px -15px;
+    font-size: 14px;
+}
+
+.login:hover {
+    background: #ff9900;
+    border-radius: 10px;
+}
+
+.login button:hover {
+    color: yellow;
+    
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,);
+    top: 89px;
+    left: -130px;
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+/* Slider CSS */
+
+.slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+}
+
+span.glyphicon.glyphicon-chevron-right,
+span.glyphicon.glyphicon-chevron-left {
+    color: yellow;
+    font-size: 50px;
+}
+
+/* Advertise CSS */
+
+.advertise {
+    text-align: center;
+}
+
+.advertise img {
+    position: relative;
+    padding: 10px;
+}
+
+/* Grid CSS */
+
+.listing .head-cate {
+    width: 50%;
+    font-size: 16px;
+    padding: 5px 1px;
+    margin: 0px;
+    float: left;
+}
+
+.listing .head-cate .cate-name {
+    color: yellow;
+}
+
+.listing .head-cate .cate-more {
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+
+.listing .grid {
+    padding: 0;
+}
+
+.listing .grid .item img {
+    width: 100%;
+}
+
+.listing .grid .item .description a.film-name {
+    font-size: 13px;
+    margin: 10px 0px;
+    padding: 0px;
+    color: yellow;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item.hover .hover-effect-1 {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    background: white;
+    width: 85%;
+    height: 86%;
+    cursor: pointer;
+    display: none;
+}
+
+.item.hover .hover-effect-1 .fa {
+    font-size: 50px;
+    position: absolute;
+    top: 38%;
+    left: 38%;
+}
+
+.item.hover:hover .hover-effect-1 {
+    display: block;
+    opacity: 0.8;
+}
+
+.item.hover .film-banner {
+    overflow: visible;
+}
+
+.item.hover .more-content {
+    position: absolute;
+    top: 225px;
+    left: -50px;
+    padding: 0 15px;
+    background: rgb(238, 238, 238);
+    color: #4b4b4b;
+    height: 0;
+    display: none;
+    border-radius: 10px;
+}
+
+.item.hover .film-banner:hover .more-content {
+    display: block;
+    height: 255px;
+    width: 300px;
+    padding: 0;
+    z-index: 1;
+}
+
+.more-content .head {
+    background-color: #9abbb8;
+    border-radius: 2px;
+}
+
+.more-content .film-name {
+    color: black;
+    display: block;
+    margin: 0px 0px -21px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.more-content .content {
+    padding: 0px 10px;
+    margin-top: -16px;
+    font-size: 13px;
+}
+
+.more-content .content p {
+    margin: 0px;
+}
+
+.more-content a {
+    color: #a78613;
+}
+
+.footer .intro p {
+    font-size: 12px;
+    padding: 0px 5px;
+    margin: 0px;
+    color: #817a7b;
+}
+
+.footer-list {
+    float: left;
+}
+
+.footer hr {
+    margin-bottom: 7px;
+}
+
+.footer-content {
+    padding: 10px 25px;
+}
+
+.footer-content .cate-name {
+    padding: 0px 0px 5px 0px;
+    color: white;
+}
+.footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer li {
+    float: left;
+    padding: 0px 40px 0px 10px;
+}
+
+.footer li a {
+    font-size: 12px;
+    display: block;
+    color: #817a7b;
+}
+
+.footer li a:hover {
+    color: yellow;
+}
+
+.footer .contact {
+    color: #817a7b;
+    font-size: 12px;
+    float: right;
+    margin-top: -130px;
+}
+
+.footer .logo {
+    padding: 0px;
+    margin: 0px 0px -30px 0px;
+}
+
+/* Detail Page */
+
+.fl-left {
+	float: left;
+}
+
+.fl-right {
+	float: right;
+}
+
+
+
+.film-info {
+    position: relative;
+}
+
+.headding {
+	color: #a78613;
+}
+
+.title {
+	display: block;    
+	font-size: 24px;    
+	font-family: Tahoma;
+	color: #f5cc2a;
+	padding: 10px 0px 0px;
+	margin: 0px;
+}
+
+.a-title {
+	display: block;    
+	text-transform: uppercase;    
+	font-size: 20px;    
+	color: #fefbf0;    
+	font-family: Tahoma;
+	padding: 0px;
+    margin: 0px;
+    max-width: 85%;
+}
+
+.icon-18 {
+    width: 30px;
+    font-size: 14px;
+    background: red;
+    border-radius: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    padding: 5px 0px 5px 4px;
+}
+
+.icon-resolution {
+    background: gray;
+    font-size: 13px;
+    width: 45px;
+    border-radius: 40px;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+    padding: 5px 2px 5px 3px
+}
+
+.list-button {
+    display: block;    
+    padding: 10px 0;
+    max-width: 95%;
+}
+
+.social {
+	color: white;	   
+    display: inline-block;    
+    padding: 5px;    
+    width: 300px;
+}
+
+.option {
+	color: white;	       
+	display: inline-block;        
+	padding: 0px; 
+}
+
+.option a {
+    color: #606163;
+    cursor: pointer;
+    padding: 3px 5px;
+    background: #f5cc2a;
+    border-radius: 5px;
+}
+
+.option a:hover {
+    text-decoration: none;
+    background:#fff;
+}
+
+.option a.addfav {
+    background: none;
+    color: #a78613;
+}
+
+.report-button {
+    padding: 0px 8px;
+    background: gray;
+    color: white;
+    border-radius: 5px;
+}
+
+.addfav-button {
+    padding: 1px 10px 7px 11px;
+    color: #a78613;
+    background: white;
+    border-radius: 20px;
+    margin: 0px 5px 0px -3px;
+    font-size: 20px;
+}
+
+.box-content-info {
+    background: #0d0d0c;    
+    padding: 5px 10px 10px;
+}
+
+.box-content-info a {
+    color: #a19e9e ;
+}
+
+.box-content-info a:hover {
+    color: yellow ;
+}
+
+.box-content-info .info {
+    width: 490px;    
+    float: left;    
+    display: inline-block;     
+    color: #a19e9e;    
+    font-size: 15px;
+}
+
+.info .tom-tat {
+	padding: 0px;
+	text-align: justify;
+}
+
+.comment {
+    float: right;
+	height: 410px;
+	overflow: auto;
+   	width: 515px;
+}
+  
+.mf {
+  	padding: 10px 0px;
+  }
+
+.more-info.fl-left {
+	width: 69%;
+}  
+
+.more-info.fl-right {
+	width: 30%;
+}
+ 
+.more-info p {
+  	padding: 0px;
+  	margin: 0px;
+  }
+
+/* Favorite Page CSS */
+
+.favfilm .box {
+    padding: 25px;
+}
+
+.favfilm .poster {
+    padding: 10px 10px 0px 10px;
+}
+
+.fc.fl-left {
+    width: 30%;
+}
+
+.fc.fl-right {
+    width: 70%;
+}
+.favfilm .content-info {
+    padding: 5px 10px;
+}
+
+.favfilm .box-content-info .info {
+    width: 100%
+}
+.favfilm .rmfav-button {
+	padding: 1px 10px 5px 10px;
+    color: #a78613;
+    background: white;
+    border-radius: 20px;
+    margin: 0px 5px 0px -3px;
+    font-size: 20px;
+}
+
+.favfilm a.rmfav {
+	background: none;
+    color: #a78613;
+}
+
+.favfilm a.rmfav:hover {
+	text-decoration: none;
+}
+
+.remove {
+    margin-top: 40px;
+}
+
+/* Favorite Film Window CSS */
+
+.fav-window {
+    padding: 0 15px;
+    background: rgb(238, 238, 238);
+    color: #4b4b4b;
+    display: block;
+    height: 600px;
+    width: 300px;
+    padding: 0;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.fav-window hr {
+  margin: 0;
+}
+
+.fav-window .head {
+    background-color: #9abbb8;
+    border-radius: 1px;
+    color: black;
+    display: block;
+    padding: 1px 0px 1px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.fav-window .title {
+    font-size: 16px;
+    padding: 10px;
+    color: black; 
+}
+
+.fav-window .foot {
+    background-color: #9abbb8;
+    border-radius: 2px;
+    display: block;
+    padding: 10px 10px 30px;
+    border-radius: 0px 0px 10px 10px;
+}
